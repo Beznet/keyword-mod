@@ -1,0 +1,120 @@
+body {
+    width: 250px;
+}
+h2 {
+        text-align: center;
+        font-family: "Arial Black", Gadget, sans-serif;
+        color: #717272;
+        margin-top:2px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+
+}
+
+.container {
+        text-align: center;
+        padding-bottom: 5px;
+
+}
+
+textarea {
+       border-radius: 10px;
+}
+
+.checks {
+        text-align: center;
+        padding-left:6px;
+        padding-bottom: 3px;
+}
+.chkbxs {
+    display: inline;
+    position: relative;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-right: 2px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.chkbxs input {
+    position: inline;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.chkbxs:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.chkbxs input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.chkbxs input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.chkbxs .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btns {
+        text-align: center;
+        position: inline;
+        padding: 5px 35px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #2196F3;
+}
+
+.button:hover {
+    background-color: #2196F3;
+    color: white;
+}
